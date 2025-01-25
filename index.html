@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start page</title>
+    <link rel="stylesheet" href="lib-bill.css">
+</head>
+<body id="body">
+    <form id="billForm">
+        <div class="form-group">
+          <label for="tdal1">passward:</label>
+          <input type="text" id="pas" placeholder="Enter item name" required>
+        </div>
+    </form>
+</body>
+<script>
+const body = document.getElementById("body");
+const ps = document.getElementById("pas");
+ps.addEventListener("input",()=>{
+    if(ps.value === "itmeabhilib101"){
+        body.innerHTML=`    
+            <a href="lib-bill-viv.html">
+        <button class="Start">lib Start</button>
+        </a>
+        <a href="lib-bill-pri.html">
+        <button class="add">lib add item</button>
+        </a>
+        <a href="lib-bill-ed.html">
+        <button class="ed">lib Edit itme</button>
+        </a>`;
+    }
+});
+</script>
+</html>
